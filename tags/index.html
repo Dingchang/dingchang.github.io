@@ -7,10 +7,10 @@
 
     
 
-    <title>First Post | Hexo</title>
+    <title>Tags | Hexo</title>
     <meta name="author" content="John Doe" />
     <meta name="keywords" content="" />
-    <meta name="description" content="Hello World!" />
+    <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -59,7 +59,7 @@
                 <span class="nav-text">Home</span>
             </a>
         
-            <a class="nav-item" href="/tags">
+            <a class="nav-item active" href="/tags">
                 <span class="nav-text">Tags</span>
             </a>
         
@@ -75,8 +75,6 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
 
-        
-        
         
         
 
@@ -140,15 +138,15 @@
     <header class="article-header">
         
         <h1 itemprop="name">
-            First Post
+            Tags
         </h1>
         
         <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/2020/03/26/post/index.html">
+            <a class="article-date" href="http://yoursite.com/tags/index.html">
     
     <i class="icon-calendar"></i>
     
-    <time datetime="2020-03-26T08:07:06.000Z" itemprop="datePublished">2020-03-26</time>
+    <time datetime="2020-03-26T09:12:29.000Z" itemprop="datePublished">2020-03-26</time>
 </a>
 
             
@@ -158,16 +156,10 @@
     
     <section class="article-body markdown-body">
         
-        <p>Hello World!</p>
-
+        
         
     </section>
 </article>
-
-
-
-<a id="pagenext" href="/2020/03/26/hello-world/" class="article-next" title="Hello World"><i class="icon-arrow-right"></i></a>
-
 
 
 
@@ -181,10 +173,10 @@
         repo: "sanonz.github.io",
         owner: "sanonz",
         admin: ["sanonz"],
-        id: "2020/03/26/post",
+        id: "tags/index.html",
         distractionFreeMode: true,
-        title: "First Post",
-        body: "http://yoursite.com/2020/03/26/post/",
+        title: "Tags",
+        body: "http://yoursite.com/tags/index.html",
         labels: []
     }).render('comments');
     </script>
@@ -242,33 +234,6 @@
         }
     });
     </script>
-    
-        
-<script src="/js/scrollspy.min.js"></script>
-
-        <script type="text/javascript">
-        $(document.body).scrollspy({target: '#aside-inner'});
-
-        $(window).on('resize', function() {
-            var hw = $('#header').width();
-            var ww = $('#wrapper').width();
-            var space = ($(this).width() - hw - ww) / 2 / 2;
-
-            var pageprev = $('#pageprev');
-            var pagenext = $('#pagenext');
-            var avg = (pageprev.width() + pagenext.width()) / 2
-
-            if(space > avg) {
-                var len = space - avg / 2;
-                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
-                pageprev.css($.extend({left: hw + len}, styles));
-                pagenext.css($.extend({right: len}, styles));
-            } else {
-                pageprev.removeAttr('style');
-                pagenext.removeAttr('style');
-            }
-        }).trigger('resize');
-        </script>
     
 
 </body>
